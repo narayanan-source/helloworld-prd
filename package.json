@@ -1,0 +1,23 @@
+{
+  "name": "helloworld-prd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narayanan-source/helloworld-prd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narayanan-source/helloworld-prd/issues"
+  },
+  "homepage": "https://github.com/narayanan-source/helloworld-prd#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
