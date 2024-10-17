@@ -17,12 +17,12 @@ jobs:
     - name: Docker Pull
       run: |
         docker pull python
-        
+
     - name: Generate SBOM  
       uses: anchore/sbom-action@v0
       with:
         image: docker.io/library/python:latest
-        output-file: library-python_latest.spdx.json
+        output-file: library-python_latest.json
 
     - name: view output
-      run: cat library-python_latest.spdx.json
+      run: cat library-python_latest.json
