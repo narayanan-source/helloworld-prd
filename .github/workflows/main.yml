@@ -17,7 +17,8 @@ jobs:
     - name: Docker Pull
       run: |
         docker pull python
-        
-    - uses: anchore/sbom-action@v0
+
+    - name: Generate SBOM  
+      uses: anchore/sbom-action@v0
       with:
-        image: 
+        image: docker.io/library/python:latest
