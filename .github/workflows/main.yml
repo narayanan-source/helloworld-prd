@@ -21,7 +21,5 @@ jobs:
       uses: anchore/sbom-action@v0
       with:
         image: docker.io/library/python:latest
-        # output-file: sbom.json
-
+        
     - name: view output
-      # run: cat sbom.json
