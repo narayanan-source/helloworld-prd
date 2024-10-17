@@ -22,7 +22,9 @@ jobs:
       uses: anchore/sbom-action@v0
       with:
         image: docker.io/library/python:latest
-        output-file: library-python_latest.spdx.json
+        output-file: library-python_latest.json
 
-    - name: env
-      run: printenv 
+    - name: printenv
+      run: |
+        printenv
+        ls
