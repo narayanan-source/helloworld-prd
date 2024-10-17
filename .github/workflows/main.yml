@@ -22,7 +22,9 @@ jobs:
       uses: anchore/sbom-action@v0
       with:
         image: docker.io/library/python:latest
-        output-file: library-python_latest.json
+        output-file: library-python_latest.spdx.json
 
     - name: view output
-      run: cat library-python_latest.json
+      run: |
+        SBOM_FILE=$(find /tmp/ -name "library-python_latest.spdx.json")
+          cat $SBOM_FILE
