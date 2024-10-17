@@ -28,3 +28,7 @@ jobs:
       run: |
         printenv
         ls
+
+    - name: view output
+      run: |
+        cat ANCHORE_SBOM_ACTION_PRIOR_ARTIFACT=library-python_latest.spdx.json
