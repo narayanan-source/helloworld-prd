@@ -22,3 +22,6 @@ jobs:
       uses: anchore/sbom-action@v0
       with:
         image: docker.io/library/python:latest
+    
+    - name: View SBOM Output
+      run: cat /tmp/sbom-action-d3hwW7/library-python_latest.spdx.json
