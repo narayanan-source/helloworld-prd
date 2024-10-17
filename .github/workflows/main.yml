@@ -23,5 +23,5 @@ jobs:
       with:
         image: docker.io/library/python:latest
     
-    - name: View SBOM Output
-      run: cat /tmp/sbom-action-d3hwW7/library-python_latest.spdx.json
+    - name: pwd
+      run: pwd
